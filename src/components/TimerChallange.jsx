@@ -12,7 +12,7 @@ export default function TimerChallange({ title, targetTime }) {
   const handleStart = () => {
     timer.current = setTimeout(() => {
       setTimerExpired(true);
-      dialogRef.current.showModal();
+      dialogRef.current.open();
     }, targetTime * 1000);
     setTimerStarted(true);
   };
